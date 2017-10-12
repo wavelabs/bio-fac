@@ -1,0 +1,60 @@
+es:
+  activerecord:
+    models:
+      health_care: Obra Social
+      comment: Comentarios
+      health_cares_patient: Afiliaciones
+      medical_order: Ordenes Médicas
+      medical_test: Análisis
+      patient: Pacientes
+      user: Usuarios
+      medical_order_item: Detalle de Orden Médica
+    attributes:
+      health_care:
+        code: Código
+        name: Nombre
+        description: Descripción
+        address: Dirección
+        phone: Teléfono
+        created_at: Creado
+        updated_at: Actualizado
+      health_cares_patients:
+        health_care: Obra Social
+      health_cares_patient:
+        affiliate_no: Número de Afiliado
+        health_care: Obra Social
+        patient: Paciente
+        active: Activo
+        created_at: Creado
+        updated_at: Actualizado
+      medical_order:
+        health_care: Obra Social
+        patient: Paciente
+        doctor_name: Dr.
+        created_at: Creado
+        updated_at: Actualizado
+      medical_test:
+        name: Nombre
+        recomendations: Recomendaciones
+        unit: Unidad de Medida
+        created_at: Creado
+        updated_at: Actualizado
+      patient:
+        first_name: Primer Nombre
+        last_name: Segundo Nombre/s
+        surname: Apellido
+        phone: Teléfono
+        dni: DNI
+        cuil: CUIL
+        cuit: CUIT
+        created_at: Alta
+        updated_at: Actualizado
+        display_name: Nombre Completo
+        active_health_care: Obra Social Activa
+        health_cares: Obras Sociales
+      medical_order_item:
+        medical_test: Análisis
+        value: Valor
+        recomendations: Valores Recomendados
+        _destroy: Eliminar
+

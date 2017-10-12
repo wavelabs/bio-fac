@@ -1,0 +1,12 @@
+es:
+  activerecord:
+    errors:
+      models:
+        health_cares_patient:
+          attributes:
+            active:
+              taken: Solo puede haber una Obra Social activa por Paciente.
+            affiliate_no:
+              taken: No puede utilizar un Número de Afiliado ya utilizado en el Paciente seleccionado para la Obra Social seleccionada.
+            health_care:
+              taken: El Paciente ya pertenece a esta Obra Social.

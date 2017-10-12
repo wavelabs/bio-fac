@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  affiliate_no: MyString
+
+two:
+  affiliate_no: MyString

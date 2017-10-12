@@ -1,0 +1,44 @@
+<br>
+<h1><%= t('.patient') %>: <%= resource.patient_display_name %></h1>
+<h2>
+  <%= t('.health_care') %>: <%= resource.health_care_name %> <br>
+  <small><%= t('.affiliate_no') %>: <%= resource.affiliate_no %></small>
+</h2>
+<h2><%= t('.doctor') %>: <%= resource.doctor_name %></h2>
+
+<hr>
+
+<h1>Análisis Clinicos Realizados</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Análisis</th>
+      <th>Valor</th>
+      <th>Valores Recomendados</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% resource.medical_order_items.each do |moi| %>
+      <tr>
+        <td><%= moi.medical_test_name.titleize %></td>
+        <td><%= moi.display_value %></td>
+        <td><%= moi.recomendations %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% if resource.comments.any? %>
+  <hr>
+
+  <h1>Comentarios</h1>
+  <ul>
+    <% resource.comments.each do |comment| %>
+      <li><%= comment.body %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<hr>
+
+<p>Gracias por realizarse los análisis clinicos con nosotros. Vuelva pronto</p>

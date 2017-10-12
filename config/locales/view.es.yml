@@ -1,0 +1,7 @@
+es:
+  admin:
+    medical_orders:
+      preview:
+        patient: Paciente
+        health_care: Obra Social
+        affiliate_no: Número de Afiliado
